@@ -1,0 +1,57 @@
+  Client6.ClientForm1.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly Client6, Version=0.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class CMino: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, Int32, System.Drawing.Color): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 X_position : Public
+    Int32 Y_position : Public
+    System.Drawing.Color Mino_color : Public
+    Int32 diameter : Public
+  Methods:
+    getX(): PrivateScope, Public, HideBySig
+    getY(): PrivateScope, Public, HideBySig
+    setX(Int32): PrivateScope, Public, HideBySig
+    setY(Int32): PrivateScope, Public, HideBySig
+    getC(): PrivateScope, Public, HideBySig
+    draw(Graphics): PrivateScope, Public, HideBySig
+    containPoint(Int32, Int32): PrivateScope, Public, HideBySig
+Class CTetriMino: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(CTetriMino): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32, Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 X_Tetri : Public
+    Int32 Y_Tetri : Public
+    Int32 type : Public
+    System.Collections.ArrayList tetrigon : Public
+    Int32 offset : Public
+  Methods:
+    getX(): PrivateScope, Public, HideBySig
+    getY(): PrivateScope, Public, HideBySig
+    setX(Int32): PrivateScope, Public, HideBySig
+    setY(Int32): PrivateScope, Public, HideBySig
+    getTy(): PrivateScope, Public, HideBySig
+    getT(): PrivateScope, Public, HideBySig
+    draw(Graphics): PrivateScope, Public, HideBySig
+    rotate(Int32, Int32): PrivateScope, Public, HideBySig
+    translate(Int32, Int32): PrivateScope, Public, HideBySig
+    containPoint(Int32, Int32): PrivateScope, Public, HideBySig
+Class Client6.Form1: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    RunClient(): PrivateScope, Public, HideBySig
+    handle(String, Int32, Int32): PrivateScope, Public, HideBySig
